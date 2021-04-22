@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Dhruv Kumar Patwari</h1>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="contactMe.html" class="active">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="form">
+            <form action="">
+                <label for="fname">
+                    <p class="label-text">First Name</p>
+                </label>
+                <div class="form-col"><input type="text" id="fname" name="firstname" placeholder="Your name.."></div>
+                <label for="lname">
+                    <p class="label-text">Last Name</p>
+                </label>
+                <div class="form-col"><input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+                <label for="country">
+                    <p class="label-text">Country</p>
+                </label>
+                <div class="form-col">
+                    <select id="country" name="country">
+                        <option value="india">India</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <label for="subject">
+                    <p class="label-text">Subject</p>
+                </label>
+                <div class="form-col"><textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea></div>
+                <div class="form-col"><input type="submit" value="Submit"></div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

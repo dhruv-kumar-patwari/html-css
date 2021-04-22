@@ -1,0 +1,56 @@
+label {
+    display: flex;
+    width: 10%;
+    float: left;
+}
+
+.form-col {
+    float: left;
+    width: 90%;
+}
+
+input[type=text],
+select,
+textarea {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    margin-left: 11%;
+    width: 100%;
+    background-color: #63DB94;
+    color: #05396B;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.label-text{
+    color:#05396B;
+    font-size:20px;
+}

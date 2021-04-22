@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #63DB94;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 50px;
+    text-align: center;
+    color: #E5ECDC;
+    vertical-align:middle;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 100px;
+    font-weight: 900;
+    
+}
+h1:hover{
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+}
+
+ul,li{
+    display: block;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    font-size: 1.5rem;
+    float:left;
+    display: block;
+    color: #05396B;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/* Change color on hover */
+.navbar a:hover {
+    color: #EDF5E0;
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+a.active {
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+
+/* Column container */
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%;
+    /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    -ms-flex: 70%;
+    /* IE10 */
+    flex: 40%;
+    background-color: white;
+    padding: 20px;
+}
+
+.right-side {
+    -ms-flex: 70%;
+    /* IE10 */
+    flex: 30%;
+    background-color: white;
+    padding: 20px;
+}
+
+.side img{
+    min-width: 100%;
+}
+
+.main img {
+    min-width: 100%;
+}
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .navbar{
+        margin-left: -50px !important;
+        margin-bottom: -17px;
+    }
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+    .navbar li {
+        font-size: 1px;
+    }
+}
+
+/* Style inputs with type="text", select elements and textareas */
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
